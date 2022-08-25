@@ -8,6 +8,10 @@ steve = Student.new
 steve.first_name = "Steve"
 steve.last_name = "Jobs"
 
+ken = Student.new
+ken.first_name = "Ken"
+ken.last_name = "Muyesu"
+
 avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
@@ -16,5 +20,14 @@ avi.last_name = "Flombaum"
 some_knowledge = avi.teach 
 
 steve.learn(some_knowledge)
+ken.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Ken just learned this important knowledge: '#{ken.knowledge.first}' from Avi"
+
+# jim...neither student/teacher
+jim = User.new
+jim.first_name = "Jimmy"
+jim.last_name = "Choo"
+
+# jim.learn(some_knowledge) #NoMethodError
